@@ -7,7 +7,7 @@ Aren't you _cansadão_ from writing Rust programs in English? Do you like saying
 funny-sounding language? Would you want to bring some French touch to your
 programs?
 
-**ferrugem** (Portuguese for _Rust_) is here to save your day, as it allows you to
+**Ferrugem** (Portuguese for _Rust_) is here to save your day, as it allows you to
 write Rust programs in PT-BR, using Portuguese keywords, Portuguese function names,
 Portuguese idioms.
 
@@ -15,74 +15,11 @@ This has been designed to be used as the official programming language to
 develop the future Portuguese sovereign operating system.
 
 
-Here's an example of what can be achieved with Ferrugem:
-
-### trait and impl (aka convention et réalisation)
-
-```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
-
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne);
-        fonction lire(&soi, clé: Chaîne) -> PeutÊtre<&Chaîne>;
-    }
-
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaîne, Chaîne>> = Rien;
-
-    structure Concrète;
-
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaîne, valeur: Chaîne) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-            };
-            dico.insérer(clé, valeur);
-        }
-        fonction lire(&soi, clé: Chaîne) -> Résultat<PeutÊtre<&Chaîne>, Chaîne> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
-            }
-        }
-    }
-}
-```
-
-### Support for regional languages
-
-```rust
-#[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
-    calisse!("tabarnak"); // for friends speaking fr-ca
-    oups!("fetchez la vache"); // in SFW contexts
-}
-```
-
-### Other examples
+### Examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
+syntax. Prontinho, that's it.
 
-## les contributions
-
-First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
-`main`) branch.
-
-Please don't introduce swear words, though: we will not excuse your French.
-
-## but why would you do zat
-
-- horsin around
-- playing with raw proc macros
-- making a bit of fun about programming languages that do this seriously,
-  though I can see their utility.
-- winking at [Marcel](https://github.com/brouberol/marcel)
-- c'est chic
 
 ## Other languages
 
@@ -125,14 +62,5 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
 - Estonian: [rooste](https://github.com/hanshs/rooste)
 - Kannada [tukku (ತುಕ್ಕು)](https://github.com/sanathNU/tukku.git)
+- French [rouille](https://github.com/bnjbvr/rouille)
 - All of the above: [unirust](https://github.com/charyan/unirust)
-
-## un grand merci
-
-- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
-
-## la license
-
-[License Publique Rien à Branler](http://sam.zoy.org/lprab/),
-_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
-by the same author.
