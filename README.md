@@ -1,30 +1,21 @@
-# rouille
+# Ferrugem
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+<img src="https://github.com/el-yawd/ferrugem/raw/main/logo.png" alt="Ferrugem Logo" width="300">
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
+Aren't you _cansadão_ from writing Rust programs in English? Do you like saying
+"merda" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some French touch to your
 programs?
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**ferrugem** (Portuguese for _Rust_) is here to save your day, as it allows you to
+write Rust programs in PT-BR, using Portuguese keywords, Portuguese function names,
+Portuguese idioms.
 
 This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. 
+develop the future Portuguese sovereign operating system.
 
-If you're from the French or any other governement with French as an official 
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
 
-You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
-
-Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
-convenience.
-
-Here's an example of what can be achieved with Rouille:
+Here's an example of what can be achieved with Ferrugem:
 
 ### trait and impl (aka convention et réalisation)
 

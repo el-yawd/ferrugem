@@ -1,9 +1,8 @@
 [package]
-name = "rouille_compilogenese"
+name = "ferrugem"
 version = "0.1.0"
 edition = "2018"
 
-[dependencies]
 
 [lib]
 proc-macro = true
